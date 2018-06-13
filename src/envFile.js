@@ -1,3 +1,3 @@
 import { readFileSync } from 'fs'
 
-export default (path = '.env') => readFileSync(path, { encoding: 'utf-8' }).trim().split('\n')
+export default (path = '../../.env.development') => readFileSync(path, { encoding: 'utf-8' }).trim().split('\n')
